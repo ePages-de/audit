@@ -1,0 +1,6 @@
+# Generated from 'npm install'
+node_modules
+npm-debug.log
+
+# OS noise
+.DS_Store
