@@ -4,3 +4,6 @@ npm-debug.log
 
 # OS noise
 .DS_Store
+
+# Generated wrapped code
+wrapped_*
