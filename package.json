@@ -6,7 +6,8 @@
 	"dependencies": {
         "underscore": "*",
         "esprima": "*",
-        "estraverse": "*"
+        "estraverse": "*",
+        "escodegen": "*"
 	},
 	"devDependencies": {
 
