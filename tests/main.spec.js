@@ -12,7 +12,7 @@ var fs = require('fs'),
     usage = function () {
         console.log('Usage:');
         console.log('------');
-        console.log('main.spec.js file [rule1 rule2 ruleX]\n');
+        console.log(path.basename(process.argv[1]) + ' file [rule1 rule2 ruleX]\n');
         console.log('rules which can be ignored:');
         console.log('program_assignment, global_assignment, use_before_defined, reference_require, require_computed');
     };

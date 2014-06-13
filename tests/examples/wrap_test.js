@@ -3,5 +3,6 @@ var $ = require('jquery'),
     _;
 
 $().ready(function () {
+    'use strict';
     _ = require('underscore');
 });
