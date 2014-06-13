@@ -2,6 +2,7 @@
 
 var fs = require('fs'),
     leak = require('../main'),
+    path = require('path'),
 
     rules = {},
     environment = {
