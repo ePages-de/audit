@@ -3,23 +3,24 @@ Audit
 
 ## How to use
 ### Code Analyse Tool
-`node main.spec.js file [rule]`
+`node main.spec.js file [ignore_rule]`
 
 `file`   file to analyse
 
-`rule`   ∈ {`program_assignment`, `global_assignment`, `use_before_defined`, `reference_require`, `require_computed`}, multiple rules are seperated by space
+`ignore_rule`   ∈ {`program_assignment`, `global_assignment`, `use_before_defined`, `reference_require`, `require_computed`, `required_modules`}, multiple rules which should be ignored are seperated by space
 
 ### AMD Wrapper
 
 `node wrap.js file [not_strict]`
+
 `not_strict`    to disable 'use strict' mode
 
-This generates a new file with the wrapped code next to the orignial file.
+This generates a new file with the wrapped code next to the original file.
 
-source.js
+source.js:
 ```javascript
 var $ = require('jquery'),
-    Backbone = require('backbonde'),
+    Backbone = require('backbone'),
     _;
 
 $().ready(function () {
@@ -28,12 +29,12 @@ $().ready(function () {
 });
 ```
 
-wrapped_source.js
+wrapped_source.js:
 ```javascript
-define(['require', 'exports', 'module', 'jquery', 'backbonde', 'underscore'], function (require, exports, module) {
+define(['require', 'exports', 'module', 'jquery', 'backbone', 'underscore'], function (require, exports, module) {
     'use strict';
     var $ = require('jquery'),
-        Backbone = require('backbonde'),
+        Backbone = require('backbone'),
         _;
 
     $().ready(function () {
