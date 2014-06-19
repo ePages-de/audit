@@ -1,5 +1,3 @@
-var a,b;
-
 define();
 
 function a () {

@@ -7,7 +7,7 @@ module.exports = {
     b: 7,
     c: 12
 };
-
+var module;
 var c = function () {
     var exports,
         module;
