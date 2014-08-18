@@ -7,6 +7,9 @@ var fs = require('fs'),
     rules = {},
     environment = {
         global_vars: {
+            module: true,
+            exports: true,
+            define: true,
             require: true
         }
     },
